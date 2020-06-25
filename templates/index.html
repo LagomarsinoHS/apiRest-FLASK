@@ -23,15 +23,51 @@
                             <li class="list-group-item active">/</li>
                             <li class="list-group-item">Method: GET</li>
                             <li class="list-group-item">RESPONSE: API DOCUMENTATION</li>
-                            <li class="list-group-item active">/contacts</li>
+                            <li class="list-group-item active">/contactos</li>
                             <li class="list-group-item">Method: GET</li>
                             <li class="list-group-item">RESPONSE:
                                 <code>
                                     [<br />
-                                        {id: 1, name: 'Test 1', email: 'test1@email.com', phone: '55555555', address: 'no address'},<br />
-                                        {id: 2, name: 'Test 2', email: 'test2@email.com', phone: '55555555', address: 'no address'},<br />
-                                        {id: 3, name: 'Test 3', email: 'test3@email.com', phone: '55555555', address: 'no address'},<br />
-                                        {id: 4, name: 'Test 4', email: 'test4@email.com', phone: '55555555', address: 'no address'},<br />
+                                        {id: 1, nombre: 'Test 1', email: 'test1@email.com', telefono: '55555555', direccion: 'no address'},<br />
+                                        {id: 2, nombre: 'Test 2', email: 'test2@email.com', telefono: '55555555', direccion: 'no address'},<br />
+                                        {id: 3, nombre: 'Test 3', email: 'test3@email.com', telefono: '55555555', direccion: 'no address'}<br />
+                                    ]
+                                </code>
+                            </li>
+                            <li class="list-group-item active">/contactos/{user}</li>
+                            <li class="list-group-item">Method: GET</li>
+                            <li class="list-group-item">RESPONSE:
+                                <code>
+                                    [<br />
+                                        {id: 1, nombre: 'Test 1', email: 'test1@email.com', telefono: '55555555', direccion: 'no address'}<br />                                       
+                                    ]
+                                </code>
+                            </li>
+                            <li class="list-group-item active">/contactos/</li>
+                            <li class="list-group-item">Method: POST</li>
+                            <li class="list-group-item">RESPONSE:
+                                <code>
+                                    [<br />
+                                        {id: 1, nombre: '', email: '', telefono: '', direccion: ''}<br />                                       
+                                    ]
+                                </code>
+                            </li>
+                           
+                            <li class="list-group-item active">/contactos/{id}</li>
+                            <li class="list-group-item">Method: PUT</li>
+                            <li class="list-group-item">RESPONSE:
+                                <code>
+                                    [<br />
+                                        {id: 1, nombre: '', email: '', telefono: '', direccion: ''}<br />                                       
+                                    ]
+                                </code>
+                            </li>
+                            <li class="list-group-item active">/contactos/{id}</li>
+                            <li class="list-group-item">Method: DELETE</li>
+                            <li class="list-group-item">RESPONSE:
+                                <code>
+                                    [<br />
+                                        Usuario {nombre} eliminado Exitosamente<br />                                       
                                     ]
                                 </code>
                             </li>
