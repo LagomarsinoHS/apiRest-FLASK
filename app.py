@@ -9,8 +9,9 @@ app.url_map.strict_slashes = False
 app.config['DEBUG'] = True 
 app.config['ENV'] = 'development' 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
+#app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///nombre_basededatos.db"  CON SQLITE
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:password@host:port/database' 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/contact' 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/BD_Local' 
 db.init_app(app)
 Migrate(app, db)
 manager = Manager(app)
